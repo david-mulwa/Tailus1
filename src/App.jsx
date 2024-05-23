@@ -1,35 +1,75 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+import Header  from './components/Header'
+import Footer from './components/Footer'
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Blog from './Pages/Blog';
+import Contact from './Pages/Contact';
+import Features from './Pages/Features';
+import Prices from './Pages/Prices';
+import signin from './Pages/signin';
+import signup from './Pages/signup';
+import ButtonGradient from'./assets/svg/ButtonGradient'
 
+function Layout(){
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <Header/>
+    <Outlet />
+    <Footer />
+
+    <ButtonGradient/>
+    
     </>
+    
   )
 }
 
-export default App
+const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    children:[
+      {
+        path:'/',
+        element:<Home/>,
+      },
+      {
+        path:'/About',
+        element:<About />,
+      },
+      {
+        path:'/Blog',
+        element:<Blog/>,
+      },
+      {
+        path:'/Contact',
+        element:<Contact/>,
+      },
+      {
+        path:'/Features',
+        element:<Features/>,
+      },
+      {
+        path:'/Prices',
+        element:<Prices/>,
+
+      },
+      {
+        path:'/signin',
+        element:<signin/>,
+      },
+      {
+        path:'/signup',
+        element:<signup/>,
+      }
+      
+    ]
+  },
+
+]);
+
+const App = () => {
+  return <RouterProvider router={router} />;
+};
+export default App; 
