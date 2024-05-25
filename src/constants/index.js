@@ -3,7 +3,22 @@ import{
   twitter,
   telegram,
   facebook,
-  instagram
+  instagram,
+  bag,
+  winking,
+  database,
+  browser,
+  search,
+  person,
+  react,
+  tailwind,
+  java,
+  python,
+  linux,
+  vmware,
+  stream,
+  namp,
+  vuetify,
 
 
 } from "../assets"
@@ -83,3 +98,78 @@ export const socials = [
   },
 ];
 
+export const info=[
+  {id: '0',
+  title: 'Bring Your Own Framework',
+  icon: bag,
+  details:'Build your site using React, Svelte, Vue, Preact, web components, or just plain ol HTML + JavaScript.'
+  },
+
+  {id: '1',
+  title: '100% Static HTML, No JS',
+  icon: browser,
+  details:'Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.'
+  },
+    {id: '2',
+  title: 'On-Demand Components',
+  icon: database,
+  details:'Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.'
+  },
+    
+  {id: '3',
+  title: 'Broad Integration',
+  icon: winking,
+  details:'Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.'
+  },
+  
+  {id: '4',
+  title: 'SEO Enabled',
+  icon:search,
+  details:'Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!'
+  },
+  
+  {id: '5',
+  title: 'Community',
+  icon:person,
+  details:'Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.'
+  },
+];
+
+export const icons=[
+  {
+    id:'0',
+    icon: react,
+  },
+  {
+    id:'1',
+    icon:tailwind,
+  },
+  {
+    id:'2',
+    icon:java,
+  },
+  {
+    id:'3',
+    icon:python
+  },
+  {
+    id:'4',
+    icon: linux
+  },
+  {
+    id:'5',
+    icon:vmware
+  },
+  {
+    id:'6',
+    icon:stream
+  },
+  {
+    id:'7',
+    icon:namp
+  },
+  {
+    id:'9',
+    icon:vuetify
+  },
+]

@@ -19,7 +19,7 @@ function Layout(){
     <Outlet />
     <Footer />
 
-    <ButtonGradient/>
+   
     
     </>
     
