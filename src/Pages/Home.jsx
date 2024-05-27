@@ -1,7 +1,7 @@
 import React from 'react'
 import Section from '../components/Section'
 import Button from '../components/Button'
-import {info} from '../constants'
+import {info, icons} from '../constants'
 
 import {astonship} from "../assets"
 
@@ -32,7 +32,7 @@ const Home = () => {
         <div className="flex flex-wrap gap-10 mb-10">
           {info.map((item)=>(
             <div key={item.id} className='block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]'>
-              <div className='relative z-2 flex flex-col min-h-[1rem] p-[2.4rem] pointer-events-none' >
+              <div className='relative z-2 flex flex-col max-md:col-auto min-h-[1rem] p-[2.4rem] pointer-events-none' >
                 <div className='flex  justify-start items-center  mb-5 gap-3 '>
                   <img src={item.icon} alt={item.title} width={24} height={12} className='border border-black rounded-full  bg-transparent '/>
                   <h5 className='h6 '>{item.title}</h5>
@@ -44,12 +44,23 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div>
-        <p>Works with your technologies</p>
-        <div></div>
+      <div className='container mt-6'>
+        <p className="text-center text-n-6">Works with your technologies</p>
+        <div className='flex flex-wrap gap-10 justify-center items-center mt-8'>
+          {icons.map((items)=>(
+            <div className='' key={items.id}>
+              <img src={items.icon} width={30} height={30}/>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className='flex p-8 md:px-20 md:py-20 mx-auto max-w-5xl rounded mt-8 bg-black flex-col items-center text-center  '>
+        <h2 className='text-white text-4xl md:text-6xl tracking tight'>Build faster websites.</h2>
+        <p className='text-n-6 mt-4 text-lg md:text-xl'>Pull content from anywhere and serve it fast with Astro's next-gen island architecture.</p>
+        <Button className='border bg-white mt-4'>Get Started</Button>
       </div>
     </Section>
   )
 }
 
-export default Home
+export default Home;

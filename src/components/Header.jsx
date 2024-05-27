@@ -36,11 +36,11 @@ const Header = () => {
           Astro<span className="text-n-6">ship</span>
         </a>
 
-        <nav className={`${openNavigation ? 'flex' : 'hidden'} fixed top-[5rem] left-0 right-0 bottom-0 lg:flex lg:static lg:mx-auto lg:bg-transparent`}>
+        <nav className={`${openNavigation ? 'flex' : 'hidden'} fixed top-[5rem] left-0 right-0 bottom-0 lg:flex lg:static lg:mx-auto lg:bg-transparent bg-white  `}>
           <div className='relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row'>
             {navigation.map((item) => (
               <Link key={item.id} to={item.url} onClick={handleClick}
-                className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${item.onlyMobile ? 'lg:hidden' : ''} py-6 md:py-8 lg:mr-0.25 lg:text-xs lg:font-semibold ${item.url === pathname ? 'z-2 lg:text-n-1' : 'lg:text-n-1'} lg:leading-5 lg:hover:text-n-7 xl:px-12`}
+                className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${item.onlyMobile ? 'lg:hidden' : ''} py-6 md:py-8 lg:mr-0.25 lg:text-xs lg:font-semibold ${item.url === pathname ? 'z-2 lg:text-n-1' : 'lg:text-n-1'} lg:leading-5 lg:hover:text-n-7 xl:px-12 relative `}
               >
                 {item.title}
               </Link>

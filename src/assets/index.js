@@ -13,12 +13,12 @@ import search from './icons/search.png'
 import tailwind from './icons/tailwind-css.png'
 import winking from './icons/winking.png'
 import java from './icons/java.png'
-import python from './icons/python'
+import python from './icons/python.png'
 import linux from './icons/linux.png'
-import vmware from '/icons/vmware.png'
-import stream from '/icons/stream.png'
-import namp from '/iconss/vuetify'
-
+import vmware from './icons/vmware.png'
+import stream from './icons/stream.png'
+import namp from './icons/namp.png'
+import vuetify from './icons/vuetify.png'
 
 
 
