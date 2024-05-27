@@ -19,6 +19,9 @@ import{
   stream,
   namp,
   vuetify,
+  janette,
+  marcell,
+  robert,
 
 
 } from "../assets"
@@ -171,5 +174,26 @@ export const icons=[
   {
     id:'9',
     icon:vuetify
+  },
+]
+
+export const staff=[
+  {
+    id:'0',
+    imageurl:janette,
+    name:'Janette Lynch',
+    position:'Senior Director'
+  },
+  {
+    id:'1',
+    imageurl:marcell,
+    name:'Marcell Ziemann',
+    position:'Principal Strategist'
+  },
+  {
+    id:'2',
+    imageurl:robert,
+    name:'Robert Palmer',
+    position:'Marketing Engineer'
   },
 ]
