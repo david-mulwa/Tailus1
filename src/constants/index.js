@@ -197,3 +197,45 @@ export const staff=[
     position:'Marketing Engineer'
   },
 ]
+
+export const Pricing=[
+  {
+    id:'0',
+    title:'Personal',
+    price:'free',
+    features:[
+      'Lifetime free',
+      'Up to 3 users',
+      'Unlimited Pages',
+      'Astro Sub domain',
+      'Basic Integrations',
+      'Community Support'
+    ]
+  },
+  {
+    id:'1',
+    title:'Startup',
+    price:'$19',
+    features:[
+      'All Free Features',
+      'Up to 20 users',
+      '20 Custom domains',
+      'Unlimited Collaborators',
+      'Advanced Integrations',
+      'Priority Support'
+    ]
+  },
+  {
+    id:'2',
+    title:'Enterprise',
+    price:'Custom',
+    features:[
+      'All Pro Features',
+      'Unlimited Custom domains',
+      '99.99% Uptime SLA',
+      'SAML & SSO Integration',
+      'Dedicated Account Manager',
+      '24/7 Phone Support',
+    ]
+  },
+]
