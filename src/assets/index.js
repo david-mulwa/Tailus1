@@ -19,7 +19,7 @@ import vmware from './icons/vmware.png'
 import stream from './icons/stream.png'
 import namp from './icons/namp.png'
 import vuetify from './icons/vuetify.png'
-import janette from './images/staff/janette.jpg'
+import janette from './images/staff/Janette.jpg'
 import marcell from './images/staff/marcell.jpg'
 import robert from './images/staff/robert.jpg'
 
