@@ -20,7 +20,7 @@ const Contact = () => {
         <p className='text-n-6 mt-3 text-xl'>We are a here to help.</p>
       </div>
 
-      <div className=' container flex gap-4 m-20'>
+      <div className=' container flex gap-4 m-20 md:flex-row '>
         <div>
           <h6 className='font-code font-semibold text-xl'> Contact Astroshio</h6>
           <p className='text-n-6 text-balance text-xl'>Have something to say? We are here to help. Fill up the form or send email or call phone.</p>

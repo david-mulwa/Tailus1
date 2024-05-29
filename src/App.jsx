@@ -4,12 +4,11 @@ import Header  from './components/Header'
 import Footer from './components/Footer'
 import Home from './Pages/Home';
 import About from './Pages/About';
-import Blog from './Pages/Blog';
+
 import Contact from './Pages/Contact';
 
 import Prices from './Pages/Prices';
-import signin from './Pages/signin';
-import signup from './Pages/signup';
+
 
 
 function Layout(){
@@ -38,10 +37,7 @@ const router = createBrowserRouter([
         path:'/About',
         element:<About />,
       },
-      {
-        path:'/Blog',
-        element:<Blog/>,
-      },
+
       {
         path:'/Contact',
         element:<Contact/>,
@@ -53,15 +49,8 @@ const router = createBrowserRouter([
         element:<Prices/>,
 
       },
-      {
-        path:'/signin',
-        element:<signin/>,
-      },
-      {
-        path:'/signup',
-        element:<signup/>,
-      }
-      
+
+
     ]
   },
 
