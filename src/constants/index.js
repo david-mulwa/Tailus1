@@ -30,7 +30,7 @@ import{
   {
     id: "0",
     title: "Features",
-    url: "/Features",
+    url: "/",
   },
   {
     id: "1",

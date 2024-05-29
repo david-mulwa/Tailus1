@@ -6,7 +6,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Blog from './Pages/Blog';
 import Contact from './Pages/Contact';
-import Features from './Pages/Features';
+
 import Prices from './Pages/Prices';
 import signin from './Pages/signin';
 import signup from './Pages/signup';
@@ -46,10 +46,8 @@ const router = createBrowserRouter([
         path:'/Contact',
         element:<Contact/>,
       },
-      {
-        path:'/Features',
-        element:<Features/>,
-      },
+      
+
       {
         path:'/Prices',
         element:<Prices/>,
