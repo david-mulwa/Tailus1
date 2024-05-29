@@ -10,7 +10,7 @@ import Contact from './Pages/Contact';
 import Prices from './Pages/Prices';
 import signin from './Pages/signin';
 import signup from './Pages/signup';
-import ButtonGradient from'./assets/svg/ButtonGradient'
+
 
 function Layout(){
   return (
